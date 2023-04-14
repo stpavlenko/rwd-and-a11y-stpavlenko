@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/normalize.css" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <title>TikTok</title>
+  </head>
+  <body>
+    <svg class="visually-hidden">
+      <defs>
+        <symbol
+          id="ecom"
+          width="48"
+          height="49"
+          viewBox="0 0 48 49"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="24" cy="24.75" r="24" fill="white" />
+          <g clip-path="url(#clip0_152_522)">
+            <path
+              d="M19 35.75C20.1046 35.75 21 34.8546 21 33.75C21 32.6454 20.1046 31.75 19 31.75C17.8954 31.75 17 32.6454 17 33.75C17 34.8546 17.8954 35.75 19 35.75Z"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M31 35.75C32.1046 35.75 33 34.8546 33 33.75C33 32.6454 32.1046 31.75 31 31.75C29.8954 31.75 29 32.6454 29 33.75C29 34.8546 29.8954 35.75 31 35.75Z"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M33.238 22.56L32 28.75H18L16 13.75H13"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.667 18.75H25"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M30 23.75C32.7614 23.75 35 21.5114 35 18.75C35 15.9886 32.7614 13.75 30 13.75C27.2386 13.75 25 15.9886 25 18.75C25 21.5114 27.2386 23.75 30 23.75Z"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M30 16.75V20.75"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M28 18.75H32"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_152_522">
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(12 12.75)"
+              />
+            </clipPath>
+          </defs>
+        </symbol>
+        <symbol
+          id="saas"
+          width="48"
+          height="49"
+          viewBox="0 0 48 49"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="24" cy="24.75" r="24" fill="white" />
+          <g clip-path="url(#clip0_152_536)">
+            <path
+              d="M16.4139 32.336L20.9999 27.75"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15 35.75C16.1046 35.75 17 34.8546 17 33.75C17 32.6454 16.1046 31.75 15 31.75C13.8954 31.75 13 32.6454 13 33.75C13 34.8546 13.8954 35.75 15 35.75Z"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M34 33.75C34 23.257 25.493 14.75 15 14.75"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15 18.75V20.75"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M25.607 23.143L24.192 24.558"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M30 33.75H28"
+              stroke="#FA0369"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_152_536">
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(12 12.75)"
+              />
+            </clipPath>
+          </defs>
+        </symbol>
+        <symbol
+          id="arrow"
+          width="20"
+          height="16"
+          viewBox="0 0 20 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.9225 7.41078L12.5 0.988281L11.3216 2.16661L16.3216 7.16661H1.66665C1.20581 7.16661 0.833313 7.53995 0.833313 7.99995C0.833313 8.45995 1.20581 8.83328 1.66665 8.83328H16.3216L11.3216 13.8333L12.5 15.0116L18.9225 8.58911C19.2483 8.26328 19.2483 7.73661 18.9225 7.41078Z"
+            fill="white"
+          />
+        </symbol>
+        <symbol
+          id="facebook"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 10.0006C19.9997 8.08964 19.4518 6.21876 18.4213 4.60946C17.3908 3.00017 15.9207 1.71985 14.1851 0.920082C12.4495 0.120316 10.5211 -0.165406 8.62821 0.0967408C6.73529 0.358888 4.95712 1.15793 3.50421 2.39926C2.0513 3.6406 0.984494 5.27224 0.430087 7.10104C-0.124321 8.92983 -0.143113 10.8792 0.375935 12.7183C0.894983 14.5575 1.93014 16.2094 3.35884 17.4785C4.78755 18.7476 6.54999 19.5808 8.4375 19.8794V12.8913H5.89875V10.0006H8.4375V7.7975C8.4375 5.29125 9.93062 3.90688 12.2144 3.90688C12.9644 3.91728 13.7126 3.98245 14.4531 4.10188V6.56313H13.1919C12.9769 6.53458 12.7584 6.55477 12.5523 6.62219C12.3462 6.68961 12.158 6.80254 12.0015 6.9526C11.845 7.10267 11.7243 7.28602 11.6483 7.48908C11.5723 7.69214 11.543 7.9097 11.5625 8.12563V10.0006H14.3362L13.8925 12.8913H11.5625V19.8794C13.9149 19.5072 16.0572 18.3078 17.604 16.4968C19.1507 14.6858 20.0004 12.3823 20 10.0006V10.0006Z"
+            fill-opacity="0.56"
+          />
+        </symbol>
+        <symbol
+          id="github"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M10 0.25C4.5 0.25 0 4.75 0 10.25C0 14.6875 2.875 18.4375 6.8125 19.75C7.3125 19.8125 7.5 19.5625 7.5 19.25C7.5 19 7.5 18.375 7.5 17.5625C4.6875 18.1875 4.125 16.25 4.125 16.25C3.6875 15.125 3 14.8125 3 14.8125C2.0625 14.1875 3.0625 14.1875 3.0625 14.1875C4.0625 14.25 4.625 15.1875 4.625 15.1875C5.5 16.6875 6.9375 16.25 7.5625 16C7.625 15.375 7.9375 14.9375 8.1875 14.6875C5.9375 14.4375 3.625 13.5625 3.625 9.75C3.625 8.6875 4 7.75 4.625 7.0625C4.5 6.8125 4.1875 5.8125 4.75 4.4375C4.75 4.4375 5.5625 4.1875 7.5 5.4375C8.3125 5.1875 9.125 5.125 10 5.125C10.875 5.125 11.6875 5.25 12.5 5.4375C14.4375 4.125 15.25 4.375 15.25 4.375C15.8125 5.75 15.4375 6.75 15.375 7C16 7.6875 16.375 8.5625 16.375 9.6875C16.375 13.5 14.0625 14.375 11.8125 14.625C12.1875 14.9375 12.5 15.5625 12.5 16.5C12.5 17.8125 12.5 18.9375 12.5 19.25C12.5 19.5 12.6875 19.8125 13.1875 19.75C17.125 18.4375 20 14.6875 20 10.25C20 4.75 15.5 0.25 10 0.25Z"
+            fill-opacity="0.56"
+          />
+        </symbol>
+        <symbol
+          id="inst"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 2.3125C12.5 2.3125 12.8 2.32187 13.7881 2.36687C14.3828 2.37389 14.9718 2.4832 15.5294 2.69C15.9364 2.84027 16.3046 3.0799 16.6069 3.39125C16.9182 3.69348 17.1579 4.06168 17.3081 4.46875C17.5149 5.02633 17.6242 5.61534 17.6313 6.21C17.6763 7.2 17.6875 7.5 17.6875 10C17.6875 12.5 17.6781 12.8 17.6331 13.7881C17.6261 14.3828 17.5168 14.9718 17.31 15.5294C17.1539 15.9335 16.9151 16.3005 16.6087 16.6069C16.3024 16.9132 15.9354 17.1521 15.5313 17.3081C14.9737 17.5149 14.3847 17.6242 13.79 17.6312C12.8019 17.6762 12.505 17.6856 10.0019 17.6856C7.49875 17.6856 7.20188 17.6762 6.21375 17.6312C5.61909 17.6242 5.03008 17.5149 4.4725 17.3081C4.06543 17.1579 3.69723 16.9182 3.395 16.6069C3.08365 16.3046 2.84402 15.9364 2.69375 15.5294C2.48695 14.9718 2.37764 14.3828 2.37063 13.7881C2.32375 12.8 2.3125 12.5031 2.3125 10C2.3125 7.49687 2.32188 7.2 2.36688 6.21188C2.37389 5.61722 2.4832 5.02821 2.69 4.47062C2.84082 4.06338 3.08109 3.69517 3.39313 3.39312C3.69536 3.08177 4.06356 2.84214 4.47063 2.69188C5.02821 2.48507 5.61722 2.37577 6.21188 2.36875C7.2 2.32375 7.5 2.3125 10 2.3125ZM10 0.625C7.45375 0.625 7.13438 0.635625 6.135 0.68125C5.35701 0.697733 4.58741 0.845651 3.85875 1.11875C3.2336 1.35403 2.66716 1.72256 2.19875 2.19875C1.72188 2.66697 1.3527 3.23343 1.11688 3.85875C0.843776 4.58741 0.695858 5.35701 0.679375 6.135C0.635625 7.13437 0.625 7.45375 0.625 10C0.625 12.5462 0.635625 12.8656 0.68125 13.865C0.697733 14.643 0.845651 15.4126 1.11875 16.1413C1.35458 16.7666 1.72376 17.333 2.20063 17.8013C2.66885 18.2781 3.23531 18.6473 3.86063 18.8831C4.58929 19.1562 5.35889 19.3041 6.13688 19.3206C7.13688 19.3663 7.45563 19.3769 10.0019 19.3769C12.5481 19.3769 12.8675 19.3663 13.8669 19.3206C14.6449 19.3041 15.4145 19.1562 16.1431 18.8831C16.7657 18.6418 17.331 18.2734 17.8031 17.8013C18.2752 17.3292 18.6437 16.7638 18.885 16.1413C19.1581 15.4126 19.306 14.643 19.3225 13.865C19.3681 12.865 19.3788 12.5462 19.3788 10C19.3788 7.45375 19.3681 7.13437 19.3225 6.135C19.306 5.35701 19.1581 4.58741 18.885 3.85875C18.6492 3.23343 18.28 2.66697 17.8031 2.19875C17.3349 1.72188 16.7684 1.3527 16.1431 1.11687C15.4145 0.843776 14.6449 0.695858 13.8669 0.679375C12.8656 0.635625 12.5463 0.625 10 0.625Z"
+            fill-opacity="0.56"
+          />
+          <path
+            d="M10 5.1875C9.04818 5.1875 8.11773 5.46975 7.32632 5.99855C6.53491 6.52736 5.91808 7.27897 5.55383 8.15834C5.18959 9.0377 5.09428 10.0053 5.27997 10.9389C5.46566 11.8724 5.92401 12.7299 6.59705 13.403C7.27009 14.076 8.1276 14.5343 9.06113 14.72C9.99466 14.9057 10.9623 14.8104 11.8417 14.4462C12.721 14.0819 13.4726 13.4651 14.0014 12.6737C14.5303 11.8823 14.8125 10.9518 14.8125 10C14.8125 8.72365 14.3055 7.49957 13.403 6.59705C12.5004 5.69453 11.2764 5.1875 10 5.1875V5.1875ZM10 13.125C9.38194 13.125 8.77775 12.9417 8.26385 12.5983C7.74994 12.255 7.3494 11.7669 7.11288 11.1959C6.87635 10.6249 6.81447 9.99653 6.93505 9.39034C7.05563 8.78415 7.35325 8.22733 7.79029 7.79029C8.22733 7.35325 8.78415 7.05562 9.39034 6.93505C9.99654 6.81447 10.6249 6.87635 11.1959 7.11288C11.7669 7.3494 12.255 7.74994 12.5983 8.26384C12.9417 8.77775 13.125 9.38193 13.125 10C13.125 10.8288 12.7958 11.6237 12.2097 12.2097C11.6237 12.7958 10.8288 13.125 10 13.125Z"
+            fill-opacity="0.56"
+          />
+          <path
+            d="M15.0044 6.12061C15.6257 6.12061 16.1294 5.61693 16.1294 4.99561C16.1294 4.37429 15.6257 3.87061 15.0044 3.87061C14.3831 3.87061 13.8794 4.37429 13.8794 4.99561C13.8794 5.61693 14.3831 6.12061 15.0044 6.12061Z"
+            fill-opacity="0.56"
+          />
+        </symbol>
+        <symbol
+          id="twitter"
+          width="20"
+          height="18"
+          viewBox="0 0 20 18"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 2.8125C19.25 3.125 18.5 3.375 17.625 3.4375C18.5 2.9375 19.125 2.125 19.4375 1.1875C18.625 1.6875 17.75 2 16.8125 2.1875C16.0625 1.375 15 0.875 13.875 0.875C11.625 0.875 9.75 2.6875 9.75 5C9.75 5.3125 9.8125 5.625 9.875 5.9375C6.4375 5.75 3.4375 4.125 1.375 1.625C1 2.25 0.8125 2.9375 0.8125 3.6875C0.8125 5.125 1.5625 6.375 2.625 7.125C1.9375 7.125 1.3125 6.9375 0.75 6.625V6.6875C0.75 8.6875 2.1875 10.3125 4.0625 10.6875C3.6875 10.75 3.375 10.8125 3 10.8125C2.75 10.8125 2.5 10.8125 2.25 10.75C2.75 12.375 4.3125 13.5625 6.0625 13.625C4.6875 14.75 2.875 15.375 0.9375 15.375C0.625 15.375 0.25 15.375 -0.0625 15.3125C1.8125 16.4375 4 17.125 6.3125 17.125C13.875 17.125 18 10.875 18 5.4375C18 5.25 18 5.0625 18 4.9375C18.75 4.3125 19.4375 3.625 20 2.8125Z"
+            fill-opacity="0.56"
+          />
+        </symbol>
+        <symbol
+          id="ad"
+          width="42"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 1H1V41H11V1Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M41 16H31V41H41V16Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M41 1H16V11H41V1Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M26 31H16V41H26V31Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M26 16H16V26H26V16Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol
+          id="delivery"
+          width="42"
+          height="46"
+          viewBox="0 0 42 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M41 39H35V45H41V39Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7 39H1V45H7V39Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M24 1H18V7H24V1Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M38 7C39.6569 7 41 5.65685 41 4C41 2.34315 39.6569 1 38 1C36.3431 1 35 2.34315 35 4C35 5.65685 36.3431 7 38 7Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4 7C5.65685 7 7 5.65685 7 4C7 2.34315 5.65685 1 4 1C2.34315 1 1 2.34315 1 4C1 5.65685 2.34315 7 4 7Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M38 7V13L34 17"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4 7V13L8 17"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 7V10"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 45C22.6569 45 24 43.6569 24 42C24 40.3431 22.6569 39 21 39C19.3431 39 18 40.3431 18 42C18 43.6569 19.3431 45 21 45Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M38 39V33L34 29"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4 39V33L8 29"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 39V36"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 28C23.7614 28 26 25.7614 26 23C26 20.2386 23.7614 18 21 18C18.2386 18 16 20.2386 16 23C16 25.7614 18.2386 28 21 28Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 18V15"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.464 19.464L15.343 17.343"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16 23H13"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.464 26.536L15.343 28.657"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 28V31"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M24.5359 26.536L26.6569 28.657"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M26 23H29"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M24.5359 19.464L26.6569 17.343"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol
+          id="grid"
+          width="42"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 1H1V9H9V1Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9 17H1V25H9V17Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9 33H1V41H9V33Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M25 1H17V9H25V1Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M25 17H17V25H25V17Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M25 33H17V41H25V33Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M41 1H33V9H41V1Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M41 17H33V25H41V17Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M41 33H33V41H41V33Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol
+          id="mouse"
+          width="32"
+          height="46"
+          viewBox="0 0 32 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 1V18"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M1 18H31"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16 45C12.0218 45 8.20644 43.4196 5.3934 40.6066C2.58035 37.7936 1 33.9782 1 30V16C1 12.0218 2.58035 8.20644 5.3934 5.3934C8.20644 2.58035 12.0218 1 16 1V1C19.9782 1 23.7936 2.58035 26.6066 5.3934C29.4196 8.20644 31 12.0218 31 16V30C31 33.9782 29.4196 37.7936 26.6066 40.6066C23.7936 43.4196 19.9782 45 16 45Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </defs>
+    </svg>
+    <header class="header">
+      <div class="header__container container">
+        <img
+          src="img/Logos/hyperswipe.png"
+          alt="hyperswipe"
+          class="header__logo"
+        />
+        <a href="/#" class="header__link button">Let's chat</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="baby">
+        <div class="baby__container container">
+          <h2 class="baby__title">
+            Gain millions of views on TikTok, grab your audience, be louder. And
+            we'll help.
+          </h2>
+          <div class="baby__img-container img-container">
+            <picture class="baby__img img-container__img">
+              <source
+                srcset="img/Screens/baby405.png"
+                media="(min-width: 700px)"
+              />
+              <img src="img/Screens/baby238.png" alt="baby" />
+            </picture>
+            <div class="baby__gradient gradient"></div>
+          </div>
+          <div class="baby__button">
+            <a href="/#" class="baby__link button"
+              >Book a Free Strategy Session</a
+            >
+            <p class="baby__text">
+              Let's get to know each other on this 30min call
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="logos">
+        <div class="container logos__container">
+          <img
+            src="img/Logos/myprotein.png"
+            alt="myprotein"
+            class="logos__img"
+          />
+          <img src="img/Logos/mihigh.png" alt="mihigh" class="logos__img" />
+          <img
+            src="img/Logos/streamloots.png"
+            alt="streamloots"
+            class="logos__img"
+          />
+          <img
+            src="img/Logos/hairburst.png"
+            alt="hairburst"
+            class="logos__img"
+          />
+        </div>
+      </section>
+      <section class="steps">
+        <div class="container steps__container">
+          <span class="steps__text">START IN SECONDS</span>
+          <h2 class="steps__title">Get started in four easy steps</h2>
+          <div class="steps__items">
+            <div class="steps__item">
+              <svg
+                class="steps__svg"
+                width="32"
+                height="46"
+                viewBox="0 0 32 46"
+              >
+                <use class="steps__use" href="#mouse" />
+              </svg>
+              <span class="steps__counter button">Step 1</span>
+              <span class="steps__description">
+                Easy one-click communication
+              </span>
+            </div>
+            <div class="steps__item">
+              <svg
+                class="steps__svg"
+                width="42"
+                height="42"
+                viewBox="0 0 42 42"
+              >
+                <use class="steps__use" href="#grid" />
+              </svg>
+              <span class="steps__counter button">Step 2</span>
+              <span class="steps__description">
+                See if our offer is right for you
+              </span>
+            </div>
+            <div class="steps__item">
+              <svg
+                class="steps__svg"
+                width="42"
+                height="46"
+                viewBox="0 0 42 46"
+              >
+                <use class="steps__use" href="#delivery" />
+              </svg>
+              <span class="steps__counter button">Step 3</span>
+              <span class="steps__description">Rapid Delivery</span>
+            </div>
+            <div class="steps__item">
+              <svg
+                class="steps__svg"
+                width="42"
+                height="42"
+                viewBox="0 0 42 42"
+              >
+                <use class="steps__use" href="#ad" />
+              </svg>
+              <span class="steps__counter button">Step 4</span>
+              <span class="steps__description">Ad launch</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reasons">
+        <div class="reasons__container container">
+          <h2 class="reasons__title">Why us?</h2>
+          <div class="reasons__item">
+            <div class="reasons__img-container img-container">
+              <img
+                src="img/Screens/wifi241.png"
+                srcset="
+                  img/Screens/wifi241.png 241w,
+                  img/Screens/wifi371.png 371w
+                "
+                alt="wifi"
+                class="reasons__img"
+              />
+              <div class="reasons__gradient gradient"></div>
+            </div>
+            <div class="reasons__info">
+              <h3 class="reasons__item-title">Creatives that sell.</h3>
+              <p class="reasons__text">
+                Have you heard of the famous saying “Create TikToks, not ads?"
+                Well - we don’t follow that crap. Our creators and editors are
+                trained to build UGC ads that take a customer from A (cold) to Z
+                (purchasers) through our modular creative framework, which
+                allows us to maximize the lifecycle of a creative..
+              </p>
+              <a href="/#" class="reasons__link button">
+                Book a Free Strategy Session
+              </a>
+            </div>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__img-container img-container">
+              <img
+                src="img/Screens/girl241.png"
+                srcset="
+                  img/Screens/girl241.png 241w,
+                  img/Screens/girl410.png 410w
+                "
+                alt="girl"
+                class="reasons__img"
+              />
+              <div class="reasons__gradient gradient"></div>
+            </div>
+            <div class="reasons__info">
+              <h3 class="reasons__item-title">Ads that convert.</h3>
+              <p class="reasons__text">
+                We have a network of TikTok influencers who create native UGC
+                for our clients
+              </p>
+              <div class="reasons__ads">
+                <div class="reasons__ad">
+                  <svg class="reasons__svg" width="49" height="49">
+                    <use href="#ecom" />
+                  </svg>
+                  <p class="reasons__ad-text">For Ecom Brands</p>
+                </div>
+                <div class="reasons__ad">
+                  <svg width="49" height="49">
+                    <use href="#saas" />
+                  </svg>
+                  <p class="reasons__ad-text">For SaaS Brands</p>
+                </div>
+              </div>
+              <a href="/#" class="reasons__link button">
+                Book a Free Strategy Session
+              </a>
+            </div>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__img-container img-container">
+              <img
+                src="img/Screens/wifi241.png"
+                srcset="
+                  img/Screens/wifi241.png 241w,
+                  img/Screens/wifi371.png 371w
+                "
+                alt="wifi"
+                class="reasons__img"
+              />
+              <div class="reasons__gradient gradient"></div>
+            </div>
+            <div class="reasons__info">
+              <h3 class="reasons__item-title">Tiktok endorsed.</h3>
+              <p class="reasons__text">
+                We’re an official TikTok Advertising Partner Agency working with
+                clients all around the world. <br />
+                <br />
+                We get early access to Alpha & Beta features on the platform and
+                have direct and dedicated support from the Tiktok Team.
+              </p>
+              <a href="/#" class="reasons__link button">
+                Book a Free Strategy Session
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-lower">
+        <section class="why">
+          <div class="container">
+            <div class="why__container rounded">
+              <div class="why__info">
+                <h2 class="why__title">Why Tiktok?</h2>
+                <p class="why__text">
+                  Advertising on TikTok is the #1 way to reach millions of
+                  people between the ages of 13 and 34 who make up 93% of your
+                  user base. You can present your product in a native way and
+                  get maximum exposure.
+                </p>
+                <p class="why__text">
+                  TikTok is one of the most active communities in the history of
+                  the Internet.
+                </p>
+                <a href="/#" class="button why__link"
+                  >Book a Free Strategy Session
+                  <svg width="20" height="1em">
+                    <use href="#arrow" />
+                  </svg>
+                </a>
+              </div>
+              <img
+                src="img/Screens/iphone.png"
+                alt="TikTok content"
+                class="why__img"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="cta">
+          <div class="cta__container container">
+            <h2 class="cta__title">Let’s get moving.</h2>
+            <img
+              src="img/DemoCall324.png"
+              srcset="img/DemoCall324.png 324w, img/DemoCall558.png 558w"
+              alt="DemoCall"
+              class="cta__img"
+            />
+            <p class="cta__text">
+              Our sole purpose is to help DTC and SaaS brands transition from
+              Conventional advertising and take advantage of exponential scaling
+              opportunities through TikTok advertisng.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__text">© 2020 Inc. All rights reserved</p>
+        <div class="footer__imgs">
+          <a href="/#" class="footer__link">
+            <svg class="footer__svg">
+              <use class="footer__use" href="#facebook" />
+            </svg>
+          </a>
+          <a href="/#" class="footer__link">
+            <svg class="footer__svg">
+              <use class="footer__use" href="#twitter" />
+            </svg>
+          </a>
+          <a href="/#" class="footer__link">
+            <svg class="footer__svg">
+              <use class="footer__use" href="#inst" />
+            </svg>
+          </a>
+          <a href="/#" class="footer__link">
+            <svg class="footer__svg">
+              <use class="footer__use" href="#github" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
