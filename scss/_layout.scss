@@ -1,14 +1,15 @@
 @use "base";
+@use "components";
 
 html {
     font-size: 16px;
-    color: get-color('primary');
+    color: base.get-color('primary');
     text-align: center;
     font-weight: 500;
 }
 
 body {
-    background-color: get-color('bg-primary');
+    background-color: base.get-color('bg-primary');
     font-family: 'DM Sans';
 }
 
@@ -17,12 +18,12 @@ section {
 }
 
 h2 {
-    font-size: $fsize-h2;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 h3 {
-    font-size: $fsize-h3;
+    font-size: 1.5rem;
     text-align: left;
     font-weight: 500;
 }
@@ -50,7 +51,7 @@ a {
 }
 
 .bg-lower {
-    background-color: get-color('primary');
+    background-color: base.get-color('primary');
 }
 
 .header {
@@ -95,7 +96,7 @@ a {
     }
     &__text {
         text-align: center;
-        color: get-color('additional');
+        color: base.get-color('additional');
         font-size: 0.8rem;
         font-weight: 400;
     }
@@ -116,7 +117,7 @@ a {
 
 .steps {    
     &__text {
-        color: get-color('secondary');
+        color: base.get-color('secondary');
     }
     &__title {
         margin-top: 0.8rem;
@@ -134,7 +135,7 @@ a {
         align-items: center;
         flex-basis: 20rem;
         flex-direction: column;
-        background-color: get-color('bg-steps');
+        background-color: base.get-color('bg-steps');
         font-size: 18px;
         padding: 3.75em 2.5em 0;
         min-height: 16.4rem;
@@ -149,7 +150,7 @@ a {
         margin-top: 0.7em;
         font-weight: 400;
         font-size: 18px;
-        color: get-color('additional');
+        color: base.get-color('additional');
     }
 }
 
@@ -199,7 +200,7 @@ a {
     }
     &__text {
         margin-top: 1rem;
-        color: get-color('additional');
+        color: base.get-color('additional');
         text-align: left;
     }
     &__link {
@@ -229,7 +230,7 @@ a {
     text-align: left;
     &__container {
         padding: 4rem 1.5rem 5.125rem;
-        background-color: get-color('bg-steps');
+        background-color: base.get-color('bg-steps');
     }
     &__info {
         display: flex;
@@ -254,7 +255,7 @@ a {
 
 .cta {
     text-align: left;
-    color: get-color('dark-gray');
+    color: base.get-color('dark-gray');
     padding-bottom: 3.4rem;
     &__img {
         display: block;
@@ -265,7 +266,7 @@ a {
     }
     &__text {
         margin-top: 2rem;
-        color: get-color('additional');
+        color: base.get-color('additional');
         font-weight: 400;
     }
 
@@ -274,8 +275,8 @@ a {
 .footer {
     text-align: left;
     font-family: 'Poppins';
-    color: rgba(get-color('dark-gray'), .56);
-    background-color: get-color('bg-footer');
+    color: rgba(base.get-color('dark-gray'), .56);
+    background-color: base.get-color('bg-footer');
     border-top: 1px solid #000;
     font-size: 12px;
     line-height: 22px;
