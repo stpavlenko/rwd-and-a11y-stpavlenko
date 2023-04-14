@@ -1,0 +1,36 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    background-color: get-color('bg-button');
+    font-size: 0.875rem;
+    width: 100%;
+    max-width: 560px;
+    white-space: nowrap;
+    height: 3.4rem;
+    color: get-color('primary');
+    text-decoration: none;
+}
+
+.rounded {
+    border-radius: 1.5rem;
+}
+
+.gradient {
+    background: get-color('gradient');
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    z-index: -2;
+    border-radius: 1rem;
+}
+
+@media (min-width: 1146px) {
+    .button {
+        padding-inline: 2.4em;
+        width: fit-content;
+        font-size: 1.125rem;
+    }
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+
+$colors: (
+    'bg-primary': #10151C,
+    'bg-secondary': #fff,
+    'bg-steps': #141A25,
+    'bg-footer': #F9F9FB,
+    'bg-button': #FA0369,
+    'primary': #fff,
+    'secondary': #FA0369,
+    'additional': #7E8597,
+    'dark-gray': #1A1A1A,
+    'gradient': linear-gradient(180deg, #432371 0%, #FAAE7B 100%),
+);
+
+$fsize-h2: 2rem;
+$fsize-h3: 1.5rem;
+// 12 14 16 18 24 32 
+
+@function get-color($color) {
+    @return map-get($colors, $color);
+}
