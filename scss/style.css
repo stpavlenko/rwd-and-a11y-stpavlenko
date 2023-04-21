@@ -266,9 +266,14 @@ img {
   left: 1%;
   padding: 0.5rem 1rem;
   transform: translateY(-150%);
+  background-color: #FA0369;
+  color: #fff;
 }
 .skip-link:focus {
   transform: translateY(0);
+}
+.skip-link:hover {
+  background-color: #7E8597;
 }
 
 .button {
