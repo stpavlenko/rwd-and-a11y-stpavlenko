@@ -20,6 +20,17 @@ img {
 	overflow: hidden;
 }
 
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    padding: 0.5rem 1rem;
+    transform: translateY(-100%);
+    &:focus {
+        transform: translateY(0);
+    }
+}
 
 $colors: (
     'bg-primary': #10151C,
