@@ -266,14 +266,18 @@ img {
   left: 1%;
   padding: 0.5rem 1rem;
   transform: translateY(-150%);
-  background-color: #FA0369;
+  background-color: #a80046;
   color: #fff;
 }
 .skip-link:focus {
   transform: translateY(0);
 }
 .skip-link:hover {
-  background-color: #7E8597;
+  background-color: #7e8597;
+}
+
+.stop-scrolling {
+  overflow: hidden;
 }
 
 .button {
@@ -281,7 +285,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 5rem;
-  background-color: #FA0369;
+  background-color: #a80046;
   font-size: 0.875rem;
   width: 100%;
   max-width: 560px;
@@ -295,13 +299,36 @@ img {
 }
 
 .gradient {
-  background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+  background: linear-gradient(180deg, #432371 0%, #faae7b 100%);
   width: 100%;
   height: 80%;
   position: absolute;
   top: 10%;
   z-index: -2;
   border-radius: 1rem;
+}
+
+.alert {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 20rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #1a1a1a;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.alert--active {
+  opacity: 1;
+  visibility: visible;
+}
+.alert__btn {
+  float: right;
 }
 
 @media (min-width: 1146px) {
@@ -320,7 +347,7 @@ html {
 }
 
 body {
-  background-color: #10151C;
+  background-color: #10151c;
   font-family: "DM Sans";
 }
 
@@ -366,7 +393,7 @@ a:hover {
 }
 
 .header__container {
-  height: 4.7rem;
+  min-height: 4.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -383,7 +410,58 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .header__link:hover {
-  background: #FA0369;
+  background: #a80046;
+}
+.header .nav__burger {
+  color: #a80046;
+}
+.header .nav__burger:hover {
+  color: #fff;
+}
+.header .nav__svg {
+  transition: 0.2s;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 2px;
+  width: 70px;
+  height: 70px;
+}
+.header .nav__label {
+  position: relative;
+  display: block;
+}
+.header .nav__label:focus-within {
+  outline: 1px solid white;
+}
+.header .nav__ul {
+  display: none;
+  list-style-type: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .nav__ul--active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 4.7em;
+  width: 100%;
+  padding: 1rem;
+  background-color: #10151c;
+  z-index: 1;
+  height: calc(100vh - 4.7em);
+  transition: 0.2s;
+}
+@media (min-width: 1146px) {
+  .header .nav .burger-check {
+    display: none;
+  }
+  .header .nav__burger {
+    display: none;
+  }
+  .header .nav__ul {
+    display: flex;
+  }
 }
 
 .hero__container {
@@ -405,7 +483,7 @@ a:hover {
 }
 .hero__text {
   text-align: center;
-  color: #7E8597;
+  color: #7e8597;
   font-size: 0.8rem;
   font-weight: 400;
 }
@@ -422,7 +500,7 @@ a:hover {
 }
 
 .steps__text {
-  color: #FA0369;
+  color: #ff006a;
 }
 .steps__title {
   margin-top: 0.8rem;
@@ -439,7 +517,7 @@ a:hover {
   align-items: center;
   flex-basis: 20rem;
   flex-direction: column;
-  background-color: #141A25;
+  background-color: #141a25;
   font-size: 1.125rem;
   padding: 3.75em 2.5em 0;
   min-height: 16.4rem;
@@ -455,7 +533,7 @@ a:hover {
   margin-top: 0.7em;
   font-weight: 400;
   font-size: 1.125rem;
-  color: #7E8597;
+  color: #7e8597;
 }
 
 .reasons__item {
@@ -476,7 +554,7 @@ a:hover {
   bottom: 5%;
   left: 22%;
   transform: rotate(3.5deg);
-  background-color: #141A25;
+  background-color: #141a25;
   border-radius: 0.6rem;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
 }
@@ -489,7 +567,7 @@ a:hover {
   bottom: 5%;
   left: 27%;
   transform: rotate(4.5deg);
-  background-color: #141A25;
+  background-color: #141a25;
   border-radius: 0.6rem;
 }
 .reasons__item:nth-child(4) .reasons__gradient {
@@ -502,7 +580,7 @@ a:hover {
 }
 .reasons__text {
   margin-top: 1rem;
-  color: #7E8597;
+  color: #7e8597;
   text-align: left;
 }
 .reasons__link {
@@ -532,7 +610,7 @@ a:hover {
 }
 .why__container {
   padding: 4rem 1.5rem 5.125rem;
-  background-color: #141A25;
+  background-color: #141a25;
 }
 .why__info {
   display: flex;
@@ -558,7 +636,7 @@ a:hover {
 
 .cta {
   text-align: left;
-  color: #1A1A1A;
+  color: #1a1a1a;
   padding-bottom: 3.4rem;
 }
 .cta__img {
@@ -570,15 +648,15 @@ a:hover {
 }
 .cta__text {
   margin-top: 2rem;
-  color: #7E8597;
+  color: #1a1a1a;
   font-weight: 400;
 }
 
 .footer {
   text-align: left;
   font-family: "Poppins";
-  color: rgba(26, 26, 26, 0.56);
-  background-color: #F9F9FB;
+  color: #1a1a1a;
+  background-color: #f9f9fb;
   border-top: 1px solid #000;
   font-size: 1.3rem;
   line-height: 22px;
@@ -602,11 +680,11 @@ a:hover {
   display: block;
   width: 20px;
   height: 20px;
-  color: #1A1A1A;
+  color: #1a1a1a;
   transition: 0.2s;
 }
 .footer__svg:hover {
-  color: #FA0369;
+  color: #a80046;
 }
 .footer__text {
   max-width: 32%;

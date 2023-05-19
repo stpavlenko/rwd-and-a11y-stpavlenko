@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="scss/style.css" />
     <title>TikTok</title>
   </head>
-  <body>
+  <body class="body">
     <h1 class="visually-hidden">HyperSwipe TikTok</h1>
     <header class="header">
       <a href="#main-content" class="skip-link">Skip navigation</a>
@@ -15,7 +15,39 @@
         <a href="" class="header__logo" title="HyperSwipe">
           <img src="img/Logos/hyperswipe.png" alt="Hyperswipe" />
         </a>
-        <a href="/#" class="header__link button">Let's chat</a>
+        <nav class="nav">
+          <label class="nav__label" aria-label="Burger menu">
+            <svg class="nav__svg nav__burger" viewBox="0 0 50 50">
+              <use href="#burger"></use>
+            </svg>
+            <input type="checkbox" class="burger-check visually-hidden" />
+          </label>
+          <ul class="nav__ul">
+            <li class="nav__li">
+              <a href="#main-content" class="nav__link header__link button"
+                >Hero</a
+              >
+            </li>
+            <li class="nav__li">
+              <a href="#/" class="nav__link header__link button">Logos</a>
+            </li>
+            <li class="nav__li">
+              <a href="#/" class="nav__link header__link button">Steps</a>
+            </li>
+            <li class="nav__li">
+              <a href="#/" class="nav__link header__link button">Reasons</a>
+            </li>
+            <li class="nav__li">
+              <a href="#/" class="nav__link header__link button">Let's chat</a>
+            </li>
+            <li class="nav__li">
+              <a href="animation.html" class="nav__link header__link button"
+                >anime.js</a
+              >
+            </li>
+          </ul>
+          <!-- <a href="/#" class="header__link button">Let's chat</a> -->
+        </nav>
       </div>
     </header>
     <main class="main" id="main-content">
@@ -302,8 +334,111 @@
         </div>
       </div>
     </footer>
+    <div class="alert rounded">
+      <button class="alert__btn">X</button>
+      <p class="alert__name"></p>
+      <p class="alert__message"></p>
+    </div>
     <svg class="visually-hidden">
       <defs>
+        <symbol id="burger">
+          <line x1="10" y1="15" x2="40" y2="15">
+            <animate
+              attributeName="y1"
+              values="15; 10"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-open"
+            />
+            <animate
+              attributeName="y2"
+              values="15; 40"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-open"
+            />
+            <animate
+              attributeName="y1"
+              values="10; 15"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-close"
+            />
+            <animate
+              attributeName="y2"
+              values="40; 15"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-close"
+            />
+          </line>
+          <line x1="10" y1="25" x2="40" y2="25">
+            <animate
+              attributeName="x2"
+              values="40; 10"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-open"
+            />
+            <animate
+              attributeName="x2"
+              values="15; 40"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-close"
+            />
+          </line>
+          <line x1="10" y1="35" x2="40" y2="35">
+            <animate
+              attributeName="y1"
+              values="35; 40"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-open"
+            />
+            <animate
+              attributeName="y2"
+              values="35; 10"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-open"
+            />
+            <animate
+              attributeName="y1"
+              values="40; 35"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-close"
+            />
+            <animate
+              attributeName="y2"
+              values="10; 35"
+              dur="0.1s"
+              fill="freeze"
+              repeatCount="1"
+              begin="indefinite"
+              class="anim-close"
+            />
+          </line>
+        </symbol>
         <symbol
           id="ecom"
           width="48"
@@ -869,5 +1004,6 @@
         </symbol>
       </defs>
     </svg>
+    <script src="js/index.js"></script>
   </body>
 </html>
