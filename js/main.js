@@ -6,7 +6,7 @@ function AnimationTarget(element, params) {
       targets: this.element,
       ...this.params,
     });
-    console.log(this.element);
+    console.log(this);
   };
 }
 
