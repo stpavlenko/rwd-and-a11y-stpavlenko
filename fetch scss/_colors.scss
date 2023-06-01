@@ -1,0 +1,16 @@
+$colors: (
+  "bg-primary": #8ecae6,
+  "bg-secondary": #219ebc,
+  "dark-blue": #023047,
+  "primary": #ffb703,
+  "secondary": #fb8500,
+  "red": crimson,
+);
+
+@function get-color($color) {
+  @return map-get($colors, $color);
+}
+
+@mixin gradient($first, $second) {
+  background: linear-gradient(get-color($first), get-color($second));
+}

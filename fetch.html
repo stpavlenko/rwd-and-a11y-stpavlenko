@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch</title>
+    <link rel="stylesheet" href="fetch scss/fetch.css" />
+  </head>
+  <body>
+    <section class="gallery">
+      <div class="wrapper">
+        <button class="btn">Обновить галлерею</button>
+        <p class="gallery__not-found"></p>
+        <div class="loader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="grid"></div>
+      </div>
+    </section>
+    <section class="temperature">
+      <div class="wrapper">
+        <form id="form">
+          <label>
+            Номер аудитории:
+            <input type="text" id="auditorium" />
+          </label>
+          <label>
+            Температура:
+            <input type="number" id="temperature" />
+          </label>
+          <button id="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <div class="alert rounded">
+      <button class="alert__btn">X</button>
+      <p class="alert__name"></p>
+      <p class="alert__message"></p>
+    </div>
+    <script src="js/fetch.js"></script>
+  </body>
+</html>

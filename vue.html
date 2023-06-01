@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fetch scss/fetch.css" />
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="app" class="wrapper vue-wrapper">
+      <form>
+        <label>
+          <h2>Текст новой записи</h2>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            v-model="textarea"
+          ></textarea>
+        </label>
+        <div class="form__lower">
+          <p
+            v-show="isActive"
+            :class="{ 'overflow': currentSymbols > maxSymbols, 'nearly-overflow': maxSymbols - currentSymbols <= 10 }"
+          >
+            {{ currentSymbols }}/{{ maxSymbols }}
+          </p>
+          <button
+            class="form__btn"
+            @click.prevent="addItem"
+            :disabled="!isActive || currentSymbols > maxSymbols"
+          >
+            Добавить
+          </button>
+        </div>
+      </form>
+      <div class="items-title">
+        <h2>{{ itemsHeader }}</h2>
+        <span>{{ items.length }}</span>
+      </div>
+      <ul>
+        <li v-for="(item, index) in items" :key="index">
+          {{ item.text }}
+          <p>
+            {{ Intl.DateTimeFormat('ru', {year: "numeric", month: "numeric",
+            day: "numeric", hour: "numeric", minute:
+            "numeric"}).format(item.time) }}
+          </p>
+        </li>
+      </ul>
+    </div>
+    <script setup src="js/app.js"></script>
+  </body>
+</html>

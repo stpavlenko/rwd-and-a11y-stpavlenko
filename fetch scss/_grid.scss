@@ -1,0 +1,20 @@
+@use "colors";
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  background: colors.get-color("bg-primary");
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.grid__item {
+  background: colors.get-color("bg-secondary");
+}
