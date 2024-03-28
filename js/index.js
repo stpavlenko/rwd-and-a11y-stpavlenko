@@ -62,4 +62,4 @@ alertBtn.addEventListener("click", () => {
   alertElem.classList.remove("alert--active");
 });
 
-alert({ name: "Stepa", message: "Hello" });
+// alert({ name: "Stepa", message: "Hello" });
